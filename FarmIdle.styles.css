@@ -229,7 +229,8 @@
     grid-auto-flow: column;
 }
 
-.farm-seed-selection > .farm-seed[b-k01tai8pui] {
-    user-select: none;
-    text-align: center;
-}
+    .farm-seed-selection > .farm-seed[b-k01tai8pui] {
+        user-select: none;
+        text-align: center;
+        cursor: grab;
+    }

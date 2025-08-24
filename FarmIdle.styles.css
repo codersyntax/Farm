@@ -1,191 +1,198 @@
-/* /Components/FieldScene.razor.rz.scp.css */
-/* Scene layout */
-.farm-scene[b-tky3btbsa9] {
-    position: relative;
-    min-height: 100dvh;
-    width: 100%;
-    overflow-x: hidden;
-    background: #e6f4ff; /* fallback under sky svg */
+/* /Components/Shop.razor.rz.scp.css */
+.sell-all-button[b-qx1giem7we] {
+    float: right;
+    padding: 4px;
 }
 
-    /* Sky fills top */
-    .farm-scene .sky[b-tky3btbsa9] {
-        position: absolute;
-        inset: 0 0 auto 0;
-        height: clamp(280px, 36vh, 420px);
-        width: 100%;
-        display: block;
-        z-index: 0;
-    }
+.shop-seed-options[b-qx1giem7we] {
+    position: relative;
+    width: auto;
+    height: auto;
+    z-index: 15;
+    display: grid;
+    grid-auto-columns: min-content;
+    grid-auto-flow: column;
+    justify-content: center;
+    overflow-x: auto;
+    gap: 12px;
+}
 
-    /* Decorative hills using layered radial-gradients */
-    .farm-scene .hills[b-tky3btbsa9] {
-        position: absolute;
-        inset: clamp(220px, 30vh, 340px) 0 0 0;
-        background: radial-gradient(1200px 400px at 15% 30%, #9bd38a 0 60%, transparent 61%), radial-gradient(1000px 360px at 60% 35%, #87c97a 0 60%, transparent 61%), radial-gradient(1200px 420px at 110% 28%, #7bbf6d 0 60%, transparent 61%);
-        z-index: 1;
-        pointer-events: none;
+    .shop-seed-options > .shop-seed-option[b-qx1giem7we] {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
     }
-
-    /* Barn sits on a hill */
-    .farm-scene .barn[b-tky3btbsa9] {
-        position: absolute;
-        left: 8%;
-        top: clamp(180px, 25vh, 280px);
-        width: clamp(80px, 10vw, 120px);
-        z-index: 2;
-        opacity: 0.95;
-    }
-
-    /* Centered field wrapper */
-    .farm-scene .field-wrap[b-tky3btbsa9] {
-        position: relative;
-        z-index: 3;
-        display: grid;
-        place-items: center;
-        padding: 2rem 1rem 3rem;
-        margin-top: clamp(160px, 22vh, 260px);
-    }
-
-    /* Soil panel (tilled) */
-    .farm-scene .field[b-tky3btbsa9] {
-        position: relative;
-        width: min(92vw, 1000px);
-        /* height auto; size derived by grid rows */
-        border-radius: 18px;
-        box-shadow: 0 12px 40px rgba(0,0,0,.15), inset 0 1px 0 rgba(255,255,255,.5);
-        overflow: hidden;
-        isolation: isolate;
-    }
-
-        .farm-scene .field .soil[b-tky3btbsa9] {
-            position: absolute;
-            inset: 0;
-            background:
-            /* subtle dirt texture */
-            radial-gradient(12px 8px at 20% 30%, rgba(0,0,0,.06) 0 40%, transparent 41%), radial-gradient(10px 6px at 70% 60%, rgba(255,255,255,.06) 0 40%, transparent 41%), linear-gradient(#6b4a2f, #4d331f);
-            mix-blend-mode: multiply;
-            opacity: .95;
-            z-index: 0;
+        .shop-seed-options > .shop-seed-option > .shop-seed-packet[b-qx1giem7we] {
+            width: auto;
+            height: auto;
+            text-align: center;
         }
 
-    /* Tilled rows + grid overlay */
-    .farm-scene .grid[b-tky3btbsa9] {
-        --cell: clamp(88px, 12vw, 140px);
-        display: grid;
-        grid-template-columns: repeat(var(--cols), var(--cell));
-        grid-auto-rows: var(--cell);
-        gap: 10px;
-        padding: 9px;
-        position: relative;
-        z-index: 1;
-    }
+        .shop-seed-options > .shop-seed-option > .shop-seed-buy-btn[b-qx1giem7we] {
+            width: auto;
+            height: 40px;
+            text-align: center;
+        }
+/* /Layout/MainLayout.razor.rz.scp.css */
+.main-container[b-yeb6bgzbqx] {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: darkkhaki;
+    user-select: none;
+    color: #8d5524;
+}
 
-    /* Individual plot cell (drop zone) */
-    .farm-scene .cell[b-tky3btbsa9] {
+.sunny-event[b-yeb6bgzbqx] {
+    background-color:darkgoldenrod;
+}
+
+.rainy-event[b-yeb6bgzbqx] {
+    background-color:cadetblue;
+}
+
+.snowy-event[b-yeb6bgzbqx] {
+    background-color:aliceblue;
+}
+
+.drought-event[b-yeb6bgzbqx] {
+    background-color:burlywood;
+
+}
+
+.rainbow-event[b-yeb6bgzbqx] {
+    background-color:mediumorchid;
+}
+
+.weather-display[b-yeb6bgzbqx] {
+    width: 500px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 60;
+    font-weight: 700;
+    font-size: medium;
+    color: #8d5524;
+    text-align: center;
+}
+
+.key-game-data-display[b-yeb6bgzbqx] {
+    position: fixed;
+    right: 12px;
+    top: 10px;
+    z-index: 30;
+    background: rgba(255,255,255,.25);
+    backdrop-filter: blur(6px);
+    border: 1px solid #8d5524;
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-weight: 700;
+    font-size: small;
+    color: #8d5524;
+    user-select: none;
+}
+
+.game-coins[b-yeb6bgzbqx] {
+    font-size: 1.5em;
+}
+
+.hotkey-help[b-yeb6bgzbqx] {
+    position: fixed;
+    right: 12px;
+    bottom: 10px;
+    z-index: 30;
+    background: rgba(255,255,255,.25);
+    backdrop-filter: blur(6px);
+    border: 1px solid #8d5524;
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-weight: 700;
+    font-size: small;
+    color: #8d5524;
+    user-select: none;
+}
+
+    .hotkey-help kbd[b-yeb6bgzbqx] {
+        background: #eee;
+        padding: .05rem .35rem;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+        color: #8d5524;
+        font-size: medium;
+    }
+/* /Pages/Home.razor.rz.scp.css */
+.farm-plot-grid[b-k01tai8pui] {
+    width: 80vw;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    top:50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+/*    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-flow: column;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px;
+}
+
+    .farm-plot-grid > .farm-plot-cell[b-k01tai8pui] {
+        width: 100px;
+        height: 100px;
         border-radius: 12px;
+        text-align: center;
         background: linear-gradient(180deg, rgba(0,0,0,.10), rgba(0,0,0,.0) 30%), repeating-linear-gradient( to bottom, #5a3b24 0 6px, #4f321e 6px 12px );
         box-shadow: inset 0 3px 0 rgba(255,255,255,.2), inset 0 -6px 12px rgba(0,0,0,.25);
         position: relative;
         outline: 1px solid rgba(0,0,0,.15);
         transition: transform .1s ease, box-shadow .1s ease, outline-color .1s ease;
+        color: #fff8f0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8em;
     }
 
-        /* Hover/focus affordance for “drop seeds here” */
-        .farm-scene .cell:hover[b-tky3btbsa9] {
-            transform: translateY(-1px);
-            outline-color: rgba(255,255,255,.25);
-            box-shadow: inset 0 3px 0 rgba(255,255,255,.25), inset 0 -10px 16px rgba(0,0,0,.3), 0 4px 10px rgba(0,0,0,.15);
+    .farm-plot-grid > .farm-plot-cell.unpurchased[b-k01tai8pui] {
+        background: #5a3b24;
+        cursor: not-allowed;
+    }
+
+        .farm-plot-grid > .farm-plot-cell > .grow-title[b-k01tai8pui] {
+            font-size: 0.7em;
         }
 
-        /* Optional slot content styling helper */
-        .farm-scene .cell > *[b-tky3btbsa9] {
-            position: relative;
-            z-index: 2; /* above soil/tilled */
+        .farm-plot-grid > .farm-plot-cell > .grow-percent[b-k01tai8pui] {
+            font-size: medium;
         }
 
-/* Dark mode nice-to-have */
-@media (prefers-color-scheme: dark) {
-    .farm-scene .sky stop[offset="1"][b-tky3btbsa9] {
-        stop-color: #d9ecff;
-    }
-
-    .farm-scene .soil[b-tky3btbsa9] {
-        opacity: .9;
-    }
-}
-/* /Layout/MainLayout.razor.rz.scp.css */
-.page[b-yeb6bgzbqx] {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+.farm-seed-selection[b-k01tai8pui] {
+    position: absolute;
+    width: auto;
+    height: 85px;
+    z-index: 15;
+    bottom: 10px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-flow: column;
 }
 
-main[b-yeb6bgzbqx] {
-    flex: 1;
-}
-
-.sidebar[b-yeb6bgzbqx] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
-}
-
-.top-row[b-yeb6bgzbqx] {
-    background-color: var( --bs-dark-bg-subtle);
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-}
-
-    .top-row[b-yeb6bgzbqx]  a, .top-row[b-yeb6bgzbqx]  .btn-link {
-        white-space: nowrap;
-        text-decoration: none;
-    }
-
-    .top-row[b-yeb6bgzbqx]  a:hover, .top-row[b-yeb6bgzbqx]  .btn-link:hover {
-        text-decoration: underline;
-    }
-
-    .top-row[b-yeb6bgzbqx]  a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-@media (max-width: 640.98px) {
-    .top-row[b-yeb6bgzbqx] {
-        justify-content: space-between;
-    }
-
-    .top-row[b-yeb6bgzbqx]  a, .top-row[b-yeb6bgzbqx]  .btn-link {
-        margin-left: 0;
-    }
-}
-
-@media (min-width: 641px) {
-    .page[b-yeb6bgzbqx] {
-        flex-direction: row;
-    }
-
-    .sidebar[b-yeb6bgzbqx] {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
-
-    .top-row[b-yeb6bgzbqx] {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .top-row.auth[b-yeb6bgzbqx]  a:first-child {
-        flex: 1;
-        text-align: right;
-        width: 0;
-    }
-
-    .top-row[b-yeb6bgzbqx], article[b-yeb6bgzbqx] {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
+.farm-seed-selection > .farm-seed[b-k01tai8pui] {
+    user-select: none;
+    text-align: center;
 }

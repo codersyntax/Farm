@@ -137,11 +137,9 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-/*    display: grid;
-    grid-auto-columns: auto;
-    grid-auto-flow: column;*/
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 12px;
     padding: 12px;

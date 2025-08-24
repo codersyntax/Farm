@@ -1,10 +1,49 @@
-/* /Components/Shop.razor.rz.scp.css */
-.sell-all-button[b-qx1giem7we] {
+/* /Components/Inventory.razor.rz.scp.css */
+.sell-all-button[b-senv4skonn] {
     float: right;
-    padding: 4px;
+    position: relative;
 }
 
-.shop-seed-options[b-qx1giem7we] {
+.inventory-container[b-senv4skonn] {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    padding: 12px;
+    overflow: auto;
+}
+
+    .inventory-container > table[b-senv4skonn] {
+        width: 100%;
+        border: 0px;
+    }
+
+        .inventory-container > table > tbody > tr[b-senv4skonn] {
+            border-bottom: 1px solid #8d5524;
+            padding: 14px;
+        }
+
+            .inventory-container > table > tbody > tr > td[b-senv4skonn] {
+                padding: 4px 0;
+                font-size: 0.8em;
+            }
+
+        .inventory-container > table > thead > tr[b-senv4skonn] {
+            border-bottom: 1px solid #8d5524;
+        }
+
+            .inventory-container > table > thead > tr > th[b-senv4skonn] {
+                padding: 4px 0;
+                font-size: 1em;
+            }
+/* /Components/Shop.razor.rz.scp.css */
+.shop-title[b-qx1giem7we] {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.shop-items[b-qx1giem7we] {
     position: relative;
     width: auto;
     height: auto;
@@ -17,20 +56,20 @@
     gap: 12px;
 }
 
-    .shop-seed-options > .shop-seed-option[b-qx1giem7we] {
+    .shop-items > .shop-item[b-qx1giem7we] {
         width: auto;
         height: auto;
         display: flex;
         flex-direction: column;
         gap: 4px;
     }
-        .shop-seed-options > .shop-seed-option > .shop-seed-packet[b-qx1giem7we] {
+        .shop-items > .shop-item > .shop-item-content[b-qx1giem7we] {
             width: auto;
             height: auto;
             text-align: center;
         }
 
-        .shop-seed-options > .shop-seed-option > .shop-seed-buy-btn[b-qx1giem7we] {
+        .shop-items > .shop-item > .shop-buy-btn[b-qx1giem7we] {
             width: auto;
             height: 40px;
             text-align: center;

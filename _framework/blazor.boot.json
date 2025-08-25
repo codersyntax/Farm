@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "FarmIdle",
   "resources": {
-    "hash": "sha256-263hmxFvijVnE9+6JJ2N5RZsTPjix2S/uIf5Fa2soJA=",
+    "hash": "sha256-dZOuo0g/jxghVUiX4cfhfvU6fx4zsVT6ig3d56R6BDA=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-O/NCYcAN9uPocD7ns7AzF/cqx7f5vL1PTJCQs0vEXyk="
     },
@@ -52,7 +52,7 @@
       "System.Threading.wasm": "sha256-6r75HNYn94aq1XKrlUCGk0t1f2/OxQTd3T/Oa3OHvuE=",
       "System.wasm": "sha256-/Ib2sECJIp5OmAw2FVP/3jA36Bh6yA6fac798DlmOd8=",
       "System.Private.CoreLib.wasm": "sha256-3mqOLgFJSTVBWRXo9/hd9tAorKNKZ/HhAOkQdJJiBT8=",
-      "FarmIdle.wasm": "sha256-yE562L+caB1jLZj050ZDgyDhcYsRpqVARbwIOIYD/hQ="
+      "FarmIdle.wasm": "sha256-U3+W0Vm5sPTop9QXmnR4FRlJqv68Las/2amAIuY3mAE="
     }
   },
   "cacheBootResources": true,

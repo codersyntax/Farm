@@ -126,7 +126,19 @@
     .start-game-overlay > .start-game-container[b-yeb6bgzbqx] {
         width: auto;
         height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+        .start-game-overlay > .start-game-container > start-game-buttons[b-yeb6bgzbqx] {
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
 .main-container[b-yeb6bgzbqx] {
     position: absolute;

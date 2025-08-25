@@ -1,3 +1,28 @@
+/* /Components/MainPanels/Achievements.razor.rz.scp.css */
+.achievements-container[b-cket45gx57] {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    padding: 12px;
+    overflow: auto;
+}
+
+.ach-bar[b-cket45gx57] {
+    width: 100%; /* full container width */
+    height: 20px; /* bar thickness */
+    background-color: #e0e0e0; /* light gray background */
+    border-radius: 10px; /* rounded corners */
+    overflow: hidden; /* keep fill rounded */
+    margin: 4px 0; /* spacing */
+}
+
+.ach-fill[b-cket45gx57] {
+    height: 100%; /* match parent bar height */
+    background-color: #4caf50; /* green fill */
+    width: 0%; /* default, overridden inline */
+    transition: width 0.4s ease; /* smooth fill animation */
+}
 /* /Components/MainPanels/GameOptions.razor.rz.scp.css */
 .options-container[b-s09ucay7xz] {
     position: relative;
@@ -164,6 +189,53 @@
         text-align: center;
         cursor: grab;
     }
+/* /Components/Toast.razor.rz.scp.css */
+.ach-toast-wrap[b-vl6yyxa0ne] {
+    position: fixed;
+    right: 12px;
+    top: 64px;
+    z-index: 70;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ach-toast[b-vl6yyxa0ne] {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: #fffef7;
+    border: 2px solid #e0c097;
+    border-radius: 12px;
+    padding: 8px 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    animation: pop-b-vl6yyxa0ne .18s ease;
+}
+
+    .ach-toast .icon[b-vl6yyxa0ne] {
+        font-size: 22px
+    }
+
+    .ach-toast .title[b-vl6yyxa0ne] {
+        font-weight: 800
+    }
+
+    .ach-toast .desc[b-vl6yyxa0ne] {
+        font-size: .9rem;
+        color: #555
+    }
+
+@keyframes pop-b-vl6yyxa0ne {
+    from {
+        transform: translateY(6px) scale(.98);
+        opacity: 0
+    }
+
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1
+    }
+}
 /* /Layout/MainLayout.razor.rz.scp.css */
 .start-game-overlay[b-yeb6bgzbqx] {
     position: absolute;

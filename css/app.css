@@ -1,3 +1,8 @@
+body {
+    scrollbar-color: #fff8f0 #e0c097;
+    scrollbar-width: thin;
+}
+
 .subtext {
     font-size: 0.7em;
 }
@@ -52,6 +57,9 @@
     padding: 14px;
     overflow: auto;
     min-height: 75vh;
+    overflow: auto;
+    scrollbar-color: #fff8f0 #e0c097;
+    scrollbar-width: thin;
 }
 
 .panel .footer {

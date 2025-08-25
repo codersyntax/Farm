@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "FarmIdle",
   "resources": {
-    "hash": "sha256-s/SEmOopqA/8uhv9aV83x0fE2/KDQO3BFAIbo3BgpoA=",
+    "hash": "sha256-mglvsXCPYi2Xr7WrL/4uStsKkBI20r5NgOK/Bb5kDfs=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-O/NCYcAN9uPocD7ns7AzF/cqx7f5vL1PTJCQs0vEXyk="
     },
@@ -18,7 +18,7 @@
     },
     "coreAssembly": {},
     "assembly": {
-      "Microsoft.AspNetCore.Components.wasm": "sha256-smnRwJTD3retSpeiCiGroPFwVr4+gz5WhUpSGYNWfJ0=",
+      "Microsoft.AspNetCore.Components.wasm": "sha256-V3/SlQoZEWwUqCAHDPSFIzwxih3Vx1VJd4jWtyt7mW0=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-5/yxxGNsycv9ckrFHslDcA4/L9vwnPEEbrM1DB+Fe5I=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-/HRjk0cwtH/+G9QrEd/AR/7cpQX9XEjnQ10LMzv7IR4=",
       "Microsoft.Extensions.Configuration.wasm": "sha256-od574rRtVVRJj+24jbl8j3GdQFpxlJOpSx+pEMw1Q18=",
@@ -52,7 +52,7 @@
       "System.Threading.wasm": "sha256-6r75HNYn94aq1XKrlUCGk0t1f2/OxQTd3T/Oa3OHvuE=",
       "System.wasm": "sha256-/Ib2sECJIp5OmAw2FVP/3jA36Bh6yA6fac798DlmOd8=",
       "System.Private.CoreLib.wasm": "sha256-3mqOLgFJSTVBWRXo9/hd9tAorKNKZ/HhAOkQdJJiBT8=",
-      "FarmIdle.wasm": "sha256-Uq1oCT27gnyuvXE8pWFpnvkCVdjDRduZL4/oEF5SSSQ="
+      "FarmIdle.wasm": "sha256-0E7zZ/Wba8Z9mNGYY3btU+K24vezb/oXTbHCcqdSgPw="
     }
   },
   "cacheBootResources": true,

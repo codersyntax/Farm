@@ -385,6 +385,10 @@ hr[b-heyyyt03p0] {
         align-items: center;
     }
 
+        .start-game-overlay > .start-game-container > .logo[b-yeb6bgzbqx] {
+            width: 35vw;
+        }
+
         .start-game-overlay > .start-game-container > start-game-buttons[b-yeb6bgzbqx] {
             width: auto;
             height: auto;

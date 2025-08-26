@@ -389,13 +389,33 @@ hr[b-heyyyt03p0] {
             width: 35vw;
         }
 
-        .start-game-overlay > .start-game-container > start-game-buttons[b-yeb6bgzbqx] {
-            width: auto;
-            height: auto;
+        .start-game-overlay > .start-game-container > .start-game-buttons[b-yeb6bgzbqx] {
+            width: 10vw;
+            height: 6vw;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
+            .start-game-overlay > .start-game-container > .start-game-buttons > .continue-button[b-yeb6bgzbqx] {
+                width: 8vw;
+                cursor: pointer;
+            }
+
+            .start-game-overlay > .start-game-container > .start-game-buttons > .continue-button:hover[b-yeb6bgzbqx] {
+                width: 10vw;
+                cursor: pointer;
+            }
+
+            .start-game-overlay > .start-game-container > .start-game-buttons > .new-game-button[b-yeb6bgzbqx] {
+                width: 8vw;
+                cursor: pointer;
+            }
+
+            .start-game-overlay > .start-game-container > .start-game-buttons > .new-game-button:hover[b-yeb6bgzbqx] {
+                width: 10vw;
+                cursor: pointer;
+            }
 
 .main-container[b-yeb6bgzbqx] {
     position: absolute;

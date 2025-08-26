@@ -272,6 +272,90 @@
         text-align: center;
         cursor: grab;
     }
+/* /Components/Weather.razor.rz.scp.css */
+.weather-container[b-heyyyt03p0] {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #ffeca6;
+}
+
+.sunny-event[b-heyyyt03p0] {
+    background-color: darkgoldenrod;
+}
+
+.rainy-event[b-heyyyt03p0] {
+    background-color: cadetblue;
+}
+
+.snowy-event[b-heyyyt03p0] {
+    background-color: aliceblue;
+}
+
+.drought-event[b-heyyyt03p0] {
+    background-color: burlywood;
+}
+
+.rainbow-event[b-heyyyt03p0] {
+    background: linear-gradient(rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%) 0 0/100% 200%;
+    animation: rainbow-b-heyyyt03p0 2s linear infinite;
+}
+
+hr[b-heyyyt03p0] {
+    width: 50px;
+    border: 1px solid;
+    border-color: transparent;
+    border-right-width: 50px;
+    position: absolute;
+    bottom: 100%;
+    transform-origin: 100% 50%;
+    animation-name: rain-b-heyyyt03p0;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+    hr.rain[b-heyyyt03p0] {
+        animation-name: rain-b-heyyyt03p0;
+        border-right-color: rgba(255,255, 255, 0.9);
+    }
+
+    hr.snow[b-heyyyt03p0] {
+        animation-name: snow-b-heyyyt03p0;
+        border-right-color: rgba(0,0, 0, 0.9);
+        animation-duration: 60s;
+        border-right-width: 5px;
+    }
+
+@keyframes rain-b-heyyyt03p0 {
+    from {
+        transform: rotate(105deg) translateX(0);
+    }
+
+    to {
+        transform: rotate(105deg) translateX(calc(100vh + 20px));
+    }
+}
+
+@keyframes snow-b-heyyyt03p0 {
+    from {
+        transform: rotate(90deg) translateX(0);
+    }
+
+    to {
+        transform: rotate(90deg) translateX(calc(100vh + 20px));
+    }
+}
+
+@keyframes rainbow-b-heyyyt03p0 {
+    to {
+        background-position: 0 -200%
+    }
+}
 /* /Layout/MainLayout.razor.rz.scp.css */
 .start-game-overlay[b-yeb6bgzbqx] {
     position: absolute;
@@ -279,13 +363,17 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: darkkhaki;
+    background-color: #ffeca6;
     user-select: none;
     color: #8d5524;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 99999;
+    /*    background-image: url("https://i.imgur.com/NPMzPAv.jpeg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;*/
 }
 
     .start-game-overlay > .start-game-container[b-yeb6bgzbqx] {
@@ -311,30 +399,9 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: darkkhaki;
+    background-color: transparent;
     user-select: none;
     color: #8d5524;
-}
-
-.sunny-event[b-yeb6bgzbqx] {
-    background-color:darkgoldenrod;
-}
-
-.rainy-event[b-yeb6bgzbqx] {
-    background-color:cadetblue;
-}
-
-.snowy-event[b-yeb6bgzbqx] {
-    background-color:aliceblue;
-}
-
-.drought-event[b-yeb6bgzbqx] {
-    background-color:burlywood;
-
-}
-
-.rainbow-event[b-yeb6bgzbqx] {
-    background-color:mediumorchid;
 }
 
 .key-game-data-display[b-yeb6bgzbqx] {
@@ -389,7 +456,7 @@
     width: 80vw;
     height: auto;
     position: absolute;
-    z-index: 0;
+    z-index: 9;
     top:50%;
     left: 50%;
     margin-right: -50%;

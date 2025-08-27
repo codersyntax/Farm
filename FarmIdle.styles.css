@@ -430,21 +430,24 @@ hr[b-heyyyt03p0] {
 
 .top-game-logo[b-yeb6bgzbqx] {
     position: absolute;
-    top: 5px;
-    width: 50%;
-    margin: 0 auto;
-    z-index: 9;
+    top: -2px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+    z-index: 11;
 }
 
 .key-game-data-display[b-yeb6bgzbqx] {
-    position: fixed;
-    right: 12px;
-    top: 10px;
-    z-index: 30;
+    position: absolute;
+    top: 13.5vh;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+    z-index: 10;
     background: rgba(255,255,255,.25);
     backdrop-filter: blur(6px);
     border: 1px solid #8d5524;
-    border-radius: 10px;
+    border-radius: 0px;
     padding: 6px 10px;
     font-weight: 700;
     font-size: small;

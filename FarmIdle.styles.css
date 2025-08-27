@@ -429,7 +429,7 @@ hr[b-heyyyt03p0] {
 }
 
 .top-game-logo[b-yeb6bgzbqx] {
-    position: fixed;
+    position: absolute;
     top: 5px;
     width: 50%;
     margin: 0 auto;
@@ -438,10 +438,10 @@ hr[b-heyyyt03p0] {
 
 .key-game-data-display[b-yeb6bgzbqx] {
     position: fixed;
-    left: 48px;
-    top: 136px;
+    right: 12px;
+    top: 10px;
     z-index: 30;
-    background: rgba(255,255,255,.75);
+    background: rgba(255,255,255,.25);
     backdrop-filter: blur(6px);
     border: 1px solid #8d5524;
     border-radius: 10px;

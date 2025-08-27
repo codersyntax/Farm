@@ -428,12 +428,20 @@ hr[b-heyyyt03p0] {
     color: #8d5524;
 }
 
+.top-game-logo[b-yeb6bgzbqx] {
+    position: fixed;
+    top: 5px;
+    width: 50%;
+    margin: 0 auto;
+    z-index: 9;
+}
+
 .key-game-data-display[b-yeb6bgzbqx] {
     position: fixed;
-    right: 12px;
-    top: 10px;
+    left: 48px;
+    top: 136px;
     z-index: 30;
-    background: rgba(255,255,255,.25);
+    background: rgba(255,255,255,.75);
     backdrop-filter: blur(6px);
     border: 1px solid #8d5524;
     border-radius: 10px;
